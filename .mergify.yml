@@ -1,0 +1,9 @@
+pull_request_rules:
+  - name: trusted config-change guard r47c
+    conditions:
+      - label=h1-resurrect-config-r47c
+      - -mergify-configuration-changed
+      - -closed
+    actions:
+      merge:
+        method: squash
