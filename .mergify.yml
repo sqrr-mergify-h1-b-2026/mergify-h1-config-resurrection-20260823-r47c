@@ -7,11 +7,3 @@ pull_request_rules:
     actions:
       merge:
         method: squash
-  - name: resurrected protected write authority r47c
-    conditions:
-      - author=sqrr-h1-a-2026
-      - label=h1-resurrected-write-r47c
-      - -closed
-    actions:
-      merge:
-        method: squash
